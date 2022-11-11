@@ -1,0 +1,17 @@
+.demo{
+    display:flex;
+    justify-content:space-evenly;
+flex-direction: column;
+}
+.demo div{
+    display: flex;
+    margin: 10px;
+gap: 20px;
+height: auto;
+}
+.demo button{
+    background-color: black;
+    color: white;
+width: 100px;
+height: auto;
+}

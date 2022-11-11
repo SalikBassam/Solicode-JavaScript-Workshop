@@ -1,0 +1,33 @@
+.demo{
+    display:flex;
+    justify-content:space-evenly;
+flex-direction: column;
+}
+.demo div{
+
+    display: flex;
+    margin: 10px;
+gap: 20px;
+height: auto;
+}
+.demo button{
+    background-color: #000000;
+    color: white;
+width: 100px;
+height: auto;
+}
+#inp input{
+width:60px;
+}
+#op div{
+    background-color: rgb(0, 0, 0);
+    color:white;
+padding: 0px 10px
+;margin: 0;
+}
+input{
+    border: none;
+}
+#demo input{
+height: 10px;
+}

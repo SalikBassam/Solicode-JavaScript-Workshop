@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Permutation de deux nombres Done/main.css">
+    <link rel="stylesheet" href="../nav/nav.css">
+
+</head>
+<body>
+   <div id="nav">
+      <ul>
+          <a href="../Calculatrice done/main.html"><li>Calculatrice</li></a>
+          <a href="../Compter le nombre de voyelles dans une chaine done/main.html"><li>Le nombre de voyelles</li></a>
+          <a href="../Devine le nombre ! done/main.html"><li>Devine le nombre</li></a>
+          <a href="../Losange en étoiles/main.html"><li>Losange en étoiles</li></a>
+          <a href="../Permutation de deux nombres Done/main.html"><li>Permutation de deux nombres</li></a>
+          <a href="../Recherche dans un tableau/main.html"><li>Recherche dans un tableau</li></a>
+          <a href="../Recherche et suppression dans une chaine/main.html"><li>Recherche et suppression</li></a>
+          <a href="../Table de multiplication done/main.html"><li>Table de multiplication</li></a>
+          <a href="../tri un tableau/main.html"><li>Tri d’un tableau</li></a>
+          <a href="../Valider une date done/main.html"><li>Valider une date</li></a>
+    <div id="btn2">&uArr;</div>
+        </ul>
+  </div>
+  <div id="btn">&dArr;</div>
+    <h1>Recherche et suppression dans une chaine</h1>
+    <div class="enonce">
+        <p>Ecrire un programme Javascript qui demande à l’utilisateur de saisir une phrase dans une zone de texte et un mot dans une autre zone de texte. Le clique sur le bouton rechercher affiche un message si le mot existe dans la phrase ou non. Le clique sur le bouton supprimer permet d’effacer toutes les occurrence du mot dans la phrase ( si le mot existe bien sûr).  </p>
+    </div>
+    <div class="demo">
+<div>
+<p>Saisir une phrase</p>
+<input type="text" id="phrase" style="width: 400px;">
+</div>
+<div>
+<p>Saisir le mot à rechercher ou à supprimer</p>
+<input type="text" id="word">
+<div id="answ"></div>
+</div>
+<div>
+   <button id="search">Rechercher</button>
+   <button id="delete">Supprimer les occurences</button>
+</div>
+<div id="spot" style="width:70%; background-color: rgba(0, 0, 0, 0.148); padding: 10px; ";>
+</div>
+
+    </div>
+<div class="code">
+    <textarea cols="50" rows="10">
+let search = document.getElementById("search");
+let remove = document.getElementById("delete");
+let phrase = document.getElementById("phrase");
+let word = document.getElementById("word");
+let spot = document.getElementById("spot");
+let answ = document.getElementById("answ");
+
+search.onclick = function(){
+   
+   spot.innerHTML = phrase.value;
+   if ( phrase.value.includes(word.value)) {
+      answ.innerHTML="This word is existing";
+      if(phrase.value === "" || word.value === ""){
+         answ.innerHTML="Empty value !!";
+      }
+}else{
+   answ.innerHTML="Undefined";
+}
+}
+remove.onclick = function(){
+   let word = document.getElementById("word");
+   let phrase = document.getElementById("phrase");
+   if ( phrase.value.includes(word.value)){
+      spot.innerHTML= phrase.value.replace(word.value, "");
+      if(phrase.value === "" || word.value === ""){
+         answ.innerHTML="Empty value !!";
+      }
+   }else{
+   answ.innerHTML="Undefined";
+   }
+}
+    </textarea>
+</div>
+<script src="main.js"></script>
+<script src="../nav/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+#nav a{
+color: white;
+text-decoration: none;
+font-weight: 700;
+}
+#nav{
+    background-color: black;
+    width:100%;
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    top: -100%;
+    transition-duration: 0.3s;
+    z-index: 11;
+}
+#nav ul{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0px 60px;
+    flex-direction: column;
+    text-align: center;
+}
+#nav ul li{
+    padding: 10px;
+transition-duration: 0.3s;
+}
+#nav ul li:hover{
+background-color: white;
+color:black;
+}
+#btn ,#btn2{
+    width:50px;
+    height:50px;
+    background-color: black;
+    border-radius: 50%;
+    margin: auto;
+    transition: 0.3s;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: white;
+    color: black;
+}
+#btn2{
+    background-color: white;
+    margin: auto;
+    border: 1px solid white;
+    color: black;
+}
+#btn2:hover{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Permutation de deux nombres Done/main.css">
+<link rel="stylesheet" href="../nav/nav.css">
+</head>
+<body>
+    <div id="nav">
+        <ul>
+            <a href="../Calculatrice done/main.html"><li>Calculatrice</li></a>
+            <a href="../Compter le nombre de voyelles dans une chaine done/main.html"><li>Le nombre de voyelles</li></a>
+            <a href="../Devine le nombre ! done/main.html"><li>Devine le nombre</li></a>
+            <a href="../Losange en étoiles/main.html"><li>Losange en étoiles</li></a>
+            <a href="../Permutation de deux nombres Done/main.html"><li>Permutation de deux nombres</li></a>
+            <a href="../Recherche dans un tableau/main.html"><li>Recherche dans un tableau</li></a>
+            <a href="../Recherche et suppression dans une chaine/main.html"><li>Recherche et suppression</li></a>
+            <a href="../Table de multiplication done/main.html"><li>Table de multiplication</li></a>
+            <a href="../tri un tableau/main.html"><li>Tri d’un tableau</li></a>
+            <a href="../Valider une date done/main.html"><li>Valider une date</li></a>
+      <div id="btn2">&uArr;</div>
+          </ul>
+    </div>
+    <div id="btn">&dArr;</div>
+    <h1>Calculatrice</h1>
+    <div class="enonce">
+        <p>Créez 4 fonctions Javascript (Somme, Soustraction, Division, Multiplication). L’utilisateur saisie deux nombres dans deux inputs, choisi ensuite une opération arithmétique. Le résultat est donné par l’une des 4 fonctions Javascript. </p>
+    </div>
+    <div class="demo">
+<div id="inp">
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+</div>
+<div id="op">
+    <div id="plus">+</div>
+    <div id="minus">-</div>
+    <div id="multiply">*</div>
+    <div id="division">/</div>
+</div>
+<div>
+    <input type="number" id="result">
+</div>
+    </div>
+<div class="code">
+ <textarea cols="50" rows="10">num1 = document.getElementById("num1");
+    num2 = document.getElementById("num2");
+    plus = document.getElementById("plus");
+    minus = document.getElementById("minus");
+    multiply = document.getElementById("multiply");
+    division = document.getElementById("division");
+    result = document.getElementById("result");
+    plus.onclick = function(){
+    result.value =Number(num1.value) + Number(num2.value)
+    }
+    minus.onclick = function(){
+        result.value =Number(num1.value) - Number(num2.value)
+        }
+        multiply.onclick = function(){
+            result.value =Number(num1.value) * Number(num2.value)
+            }
+            division.onclick = function(){
+                result.value =Number(num1.value) / Number(num2.value)
+                }</textarea>
+</div>
+<script src="main.js"></script>
+<script src="../nav/nav.js"></script>
+
+</body>
+</html>
